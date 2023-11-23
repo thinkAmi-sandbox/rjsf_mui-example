@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Introduction} from "./components/pages/Introduction.tsx";
 import {AdditionalButton} from "./components/pages/AdditionalButton.tsx";
 import {Placeholder} from "./components/pages/Placeholder.tsx";
+import {ChangeWidget} from "./components/pages/ChangeWidget.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
 
     path: '/placeholder',
     element: <Placeholder />
+  },
+  {
+    path: '/change-widget',
+    element: <ChangeWidget />
   }
 ])
 

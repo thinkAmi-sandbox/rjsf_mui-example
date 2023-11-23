@@ -11,8 +11,14 @@ const schema: RJSFSchema = {
   }
 }
 
+const uiSchema: UiSchema = {
+  attendance: {
+    'ui:widget': 'select'
+  }
+}
+
 export const ChangeWidget = () => {
   return (
-    <Form schema={schema} validator={validator} />
+    <Form schema={schema} validator={validator} uiSchema={uiSchema} />
   )
 }

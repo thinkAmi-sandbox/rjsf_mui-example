@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Introduction} from "./components/pages/Introduction.tsx";
 import {AdditionalButton} from "./components/pages/AdditionalButton.tsx";
+import {Placeholder} from "./components/pages/Placeholder.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Introduction />
   },
   {
-    path: "/additional-button",
+    path: '/additional-button',
     element: <AdditionalButton />
+  },
+  {
+
+    path: '/placeholder',
+    element: <Placeholder />
   }
 ])
 
